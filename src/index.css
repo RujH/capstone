@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding: 50px;
+  text-align: center;
+  background: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+.section:nth-child(even) {
+  background: #eaeaea;
+}
+
+/* Landing Page Styles */
+.landing-page {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.landing-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}

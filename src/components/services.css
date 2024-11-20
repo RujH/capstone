@@ -1,0 +1,48 @@
+/* Services Section Styling */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.services-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.service {
+    flex: 1 1 30%; /* Ensure the items stay at 30% of the width, side by side */
+    min-width: 250px; /* Prevent shrinking too small */
+    padding: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Add border to divide sections */
+.service:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border-right: 1px solid #ccc;
+}
