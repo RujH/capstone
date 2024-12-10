@@ -1,7 +1,7 @@
 {
   "name": "capstone",
   "version": "0.1.0",
-  "homepage": "https://RujH.github.io/capstone",
+  "homepage": "https://capstoneautoparts.com",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && mv build dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
