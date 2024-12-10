@@ -8,7 +8,6 @@ function LandingPage () {
 
     return (
         <div className="landing-page">
-            {/* Reference the video directly from the public folder */}
             <video className="landing-video" autoPlay muted loop>
                 <source src={`${process.env.PUBLIC_URL}/video.mp4`} type="video/mp4" />
                 Your browser does not support the video tag.

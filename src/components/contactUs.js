@@ -18,7 +18,6 @@ function ContactUs (){
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission logic here, like sending data to an API or server
         alert('Form submitted');
         setFormData({
             name: '',
