@@ -8,14 +8,16 @@
 }
 
 .about-content {
-    width: 60%;
+    width: 90%;
     padding: 20px;
+    text-align: center;
 }
 
 .about-title {
     font-size: 2rem;
     color: #333;
     margin-bottom: 20px;
+    
 }
 
 .about-description {
@@ -30,6 +32,28 @@
     height: auto;
     max-width: 400px;
     border-radius: 8px;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-around; /* Space between items */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allows wrapping if needed for smaller screens */
+    gap: 1rem; /* Optional: Adds spacing between items */
+}
+
+.small-section {
+    display: flex;
+    flex-direction: column; /* Icons above text */
+    align-items: center; /* Center icon and text horizontally */
+    text-align: center; /* Center text content */
+}
+
+.text {
+    margin-top: 0.5rem; /* Space between icon and text */
+    font-size: 1rem; /* Adjust text size */
+    color: #333; /* Adjust text color */
 }
 
 /* Responsive Design */
@@ -48,3 +72,5 @@
         max-width: 100%;
     }
 }
+
+

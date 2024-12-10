@@ -22,6 +22,7 @@
     transform: translate(-50%, -50%); /* Centers the element exactly */
     color: white; /* Adjust text color */
     text-align: center;
+    font-weight: 500;
 }
 .logo {
     display: inline-block;

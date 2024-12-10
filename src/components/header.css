@@ -1,14 +1,18 @@
 /* header.css */
 .header {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    z-index: 1000;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 10px;
-    height: 80px; /* Adjust this to your needs */
-    background-color: #fff;
-  }
-  
-
+    height: 80px; 
+    background-color: #141a17 ;
+    gap: 55%;
+}
 
 .nav ul {
     list-style: none;
@@ -20,12 +24,12 @@
 
 .nav a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .nav a:hover {
-    color: #f39c12;
+    color: #f3de5a;
 }
