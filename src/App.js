@@ -5,7 +5,6 @@ import AboutUs from './components/aboutUs';
 import ContactUs from './components/contactUs';
 import './App.css';
 import Header from './components/header';
-import Testimonial from './components/testimonialPages';
 import Footer from './components/footer';
 
 
