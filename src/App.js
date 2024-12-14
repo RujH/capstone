@@ -17,7 +17,6 @@ function App() {
         <LandingPage />
         <Services/>
         <AboutUs />
-        {/* <Testimonial/> */}
         <ContactUs /> 
         <Footer/>
       </main>
