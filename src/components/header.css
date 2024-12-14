@@ -1,5 +1,28 @@
 /* header.css */
-.header {
+.header1 {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 80px; 
+    background-color: #ffffff ;
+    gap: 55%;
+}
+
+.space-between-icons {
+    display: flex;
+    gap: 20px; /* Space between the social media icons */
+    justify-content: flex-end;
+    margin-left: 40px;
+    
+}
+
+.header2 {
     position: fixed;
     top: 0;
     left: 0; 
@@ -8,6 +31,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 70px;
     padding: 10px;
     height: 80px; 
     background-color: #141a17 ;
@@ -32,4 +56,33 @@
 
 .nav a:hover {
     color: #f3de5a;
+}
+
+
+.about-content {
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+}
+.small-section {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    text-align: center; 
+    gap: 0.5rem;
+   
+}
+.textHeader {
+    margin-top: 0.5rem; 
+    font-size: 1rem; 
+    color: #000000; 
+    line-height: 1;
+    margin: 0;
+}
+.headerRow {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+    flex-wrap: wrap;  
+    gap: 20px; 
 }

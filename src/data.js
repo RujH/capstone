@@ -1,0 +1,7 @@
+const servicesData = {
+    "CLEANING":"We fully dismantle vehicles and thoroughly clean every part before an initial inspection and the decision to list a part. It is nearly impossible to accurately inspect and inventory a part if it hasn’t been removed from the vehicle and thoroughly cleaned.",
+    "PHOTOGRAPHY":"We believe in transparency, which is why we provide detailed, high-resolution photos of our parts. These images offer a clear and accurate representation of the item, helping our customers make informed decisions without surprises.",
+    "STORAGE":"Spoiled by the likes of big eCommerce giant, Amazon, we know our customers have shared a similar experience. Hence we are implementing some of the latest technologies and management techniques to create an efficient system where most orders are processed in less than 24 hrs. Additionally, our entire inventory is stored indoors to protect from the elements.",
+    "SHIPPING​":"Our shipping process is streamlined for speed and reliability. We carefully pack each part to ensure it’s protected during transit, and we work with trusted carriers to get your parts to you quickly and in perfect condition.",
+    "WARRANTY":"At Capstone Auto Parts, we take pride in offering top-quality used car parts that come with a standard 1-year warranty for added peace of mind in most part categories. For customers seeking even greater protection, we also provide the option to purchase up to 3 years of extended warranty, as well as labor warranties."
+}

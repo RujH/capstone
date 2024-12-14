@@ -13,7 +13,11 @@ function LandingPage () {
                 Your browser does not support the video tag.
             </video>
             <div className="overlay">
-                <h1> Coming Soon ...</h1>
+                <h1> A New Approach to Auto Recycling
+                    Where
+                    Sustainability, Affordability and Consistent Quality 
+                    are our beacon of future
+                </h1>
             </div>
         </div>
     );

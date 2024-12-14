@@ -5,6 +5,8 @@ import AboutUs from './components/aboutUs';
 import ContactUs from './components/contactUs';
 import './App.css';
 import Header from './components/header';
+import Testimonial from './components/testimonialPages';
+import Footer from './components/footer';
 
 
 
@@ -14,9 +16,11 @@ function App() {
       <main className='relative min-h-screen w-screen overflow-x-hidden'>
         <Header/>
         <LandingPage />
-        <AboutUs />
         <Services/>
+        <AboutUs />
+        {/* <Testimonial/> */}
         <ContactUs /> 
+        <Footer/>
       </main>
      
 

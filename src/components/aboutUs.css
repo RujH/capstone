@@ -1,76 +1,56 @@
 /* About Us Section Styling */
 .about-us {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 60px 20px;
-    background-color: #f9f9f9;
+    background-color:  #141a17;
 }
 
-.about-content {
-    width: 90%;
-    padding: 20px;
-    text-align: center;
-}
 
 .about-title {
+    text-align: center; 
     font-size: 2rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
-    
 }
 
 .about-description {
     font-size: 1rem;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.about-image img {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
-    border-radius: 8px;
+    color: #ffffff;
+    line-height: 1.5;
+    text-align: center; 
+    margin: 0;
+    max-width: 900px;
 }
 
 
 .row {
     display: flex;
-    justify-content: space-around; /* Space between items */
-    align-items: center; /* Center items vertically */
-    flex-wrap: wrap; /* Allows wrapping if needed for smaller screens */
-    gap: 1rem; /* Optional: Adds spacing between items */
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1.5rem; 
 }
 
 .small-section {
     display: flex;
-    flex-direction: column; /* Icons above text */
-    align-items: center; /* Center icon and text horizontally */
-    text-align: center; /* Center text content */
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
 }
 
 .text {
-    margin-top: 0.5rem; /* Space between icon and text */
-    font-size: 1rem; /* Adjust text size */
-    color: #333; /* Adjust text color */
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about-us {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-content {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .about-image img {
-        max-width: 100%;
-    }
+.row1 {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem; 
+    margin-top: 10px;
 }
-
-
