@@ -26,17 +26,17 @@ function Header () {
                     
                    
                     <div className="flex space-x-5 space-between-icons">
-                        <a href="https://www.facebook.com" target="_blank">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                         <FaFacebook className='w-6 h-6'></FaFacebook>
                         </a>
                         
                   
-                        <a href="https://www.instagram.com" target="_blank">
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                             <FaInstagram className="w-6 h-6" />
                         </a>
                    
 
-                        <a href="https://www.ebay.com" target="_blank">
+                        <a href="https://www.ebay.com" target="_blank" rel="noopener noreferrer">
                             <FaEbay className="w-8 h-8" />
                         </a>
 

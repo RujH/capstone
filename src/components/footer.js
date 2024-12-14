@@ -26,16 +26,16 @@ function Footer () {
                         <h3 className="mb-4">Follow Us</h3>
 
                         <div className="flex flex-col items-center space-y-4">
-                            <a href="https://www.facebook.com" target="_blank" className="flex items-center space-x-2">
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
                                 <FaFacebook className="w-6 h-6" />
                                 <p className="text-white">Facebook</p>
                             </a>
-                            <a href="https://www.ebay.com" target="_blank" className="flex items-center space-x-2">
+                            <a href="https://www.ebay.com" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
                                 <FaEbay className="w-8 h-8" />
                                 <p className="text-white">Ebay</p>
                             </a>
 
-                            <a href="https://www.instagram.com" target="_blank" className="flex items-center space-x-2">
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
                                 <FaInstagram className="w-6 h-6" />
                                 <p className="text-white">Instagram</p>
                             </a>
