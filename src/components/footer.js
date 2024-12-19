@@ -15,7 +15,7 @@ function Footer () {
                 </div>
                 <div className="text-center space-y-4">
                     <p className="text-xl font-semibold">Get In Touch</p>
-                    <p className="text-lg">Text us at (619) 359 0333</p>
+                    <p className="text-lg">Text us at (619) 359-0333</p>
                     <p className="text-lg">Info@capstoneautoparts.com</p>
     
                     <a href="https://www.google.com/maps/search/?api=1&query=935+Bailey+Ct,+San+Marcos,+CA+92069" target="_blank" rel="noopener noreferrer">

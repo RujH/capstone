@@ -5,13 +5,13 @@ import { FaEbay } from "react-icons/fa";
 
 function Header () {
     return (
-        <section>
+        <section className='' >
             {/* First Header (Contact Information) */}
-            <header className="bg-white h-auto flex items-center py-4">
+            <header className="bg-white h-auto flex items-center self-start sticky top-0 z-10 py-4">
                 <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 w-full mx-auto px-4">
                     <div className="flex items-center justify-center text-center">
                         <PhoneIcon className="w-6 h-6 text-green-368 mr-2" />
-                        <p className="text-sm sm:text-base">(619) 359 0333</p>
+                        <p className="text-sm sm:text-base">(619) 359-0333</p>
                     </div>
 
                     <div className="flex items-center justify-center text-center">
@@ -40,7 +40,7 @@ function Header () {
             </header>
 
             {/* Second Header (Navigation) */}
-            <header className="bg-black h-auto flex items-center py-4">
+            <header className="bg-black h-auto flex items-center self-start sticky top-0 z-20 py-4">
                 <nav className="container mx-auto flex flex-col sm:flex-row items-center justify-between px-4 w-full">
                     <div className="py-1 flex items-center justify-center sm:justify-start">
                         <img

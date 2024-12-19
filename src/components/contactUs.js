@@ -50,7 +50,7 @@ function ContactUs ()  {
   return (
     <section className="bg-white py-12" id="contact">
       <div className="container mx-auto px-4">
-        <h2 className=" merriweather-bold text-3xl text-center text-black mb-8">Tired of Ordering The Wrong Part? We Can Help</h2>
+        <h2 className=" contact-title merriweather-bold text-center  mb-8">Tired of Ordering the Wrong Part? We Can Help</h2>
       
       
         {isSubmitted && (
