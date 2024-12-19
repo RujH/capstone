@@ -25,7 +25,7 @@ function Services() {
                 </div>
                 <img 
                     className="object-cover w-1/4 h-auto max-h-48 md:h-60" 
-                    src={`${process.env.PUBLIC_URL}/carPart.png`} 
+                    src={`${process.env.PUBLIC_URL}/CarPart.png`} 
                     alt="Cleaning" 
                 />
             </div>
