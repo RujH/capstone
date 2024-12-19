@@ -1,8 +1,8 @@
 /* Contact Us Section Styling */
 .contact-us {
     padding: 60px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-title {
@@ -11,11 +11,7 @@
     margin-bottom: 20px;
 }
 
-.contact-description {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 40px;
-}
+
 
 .contact-form {
     max-width: 600px;

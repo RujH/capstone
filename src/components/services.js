@@ -4,9 +4,9 @@ import './services.css';
 function Services() {
     return (
         <section className="services">
-            <h2 className="services-title">What Do We Do Differently?</h2>
-            <div className=" mx-auto text-gray-800 max-w-6xl p-4">
-                <p className="text-base mb-4">
+            <h2 className="services-title merriweather-bold">What Do We Do Differently?</h2>
+            <div className=" max-w-5xl mx-auto">
+                <p className="text-base mb-4 text-grey-800 break-words">
                     At Capstone Auto Parts, we set ourselves apart from others in the used auto parts market through our attention to detail and commitment to provide consistency in the quality of our parts while maintaining price competitiveness.
                     Each step of our process, from cleaning to shipping, is designed to ensure the best experience for our customers.
                     Here’s how we do things differently:
@@ -14,8 +14,8 @@ function Services() {
             
             </div>
 
-            <div className="flex flex-row bg-black rounded-lg overflow-hidden max-w-screen-xl mx-auto mb-5">
-                <div className="flex flex-col p-4">
+            <div className="flex flex-row bg-black rounded-lg overflow-hidden max-w-screen-lg mx-auto mb-5">
+                <div className="flex flex-col p-6 w-3/4">
                     <h5 className="text-2xl font-semibold text-white mb-2">
                         CLEANING
                     </h5>
@@ -24,14 +24,15 @@ function Services() {
                     </p>
                 </div>
                 <img 
-                    className="ml-10 object-cover h-80 md:h-60" 
-                    src={`${process.env.PUBLIC_URL}/CarDoor.png`} 
+                    className="object-cover w-1/4 h-80 md:h-60" 
+                    src={`${process.env.PUBLIC_URL}/carPart.png`} 
                     alt="Cleaning" 
                 />
-             </div>
+            </div>
 
-             <div className="flex flex-row bg-black rounded-lg overflow-hidden max-w-screen-xl mx-auto mb-5">
-                <div className="flex flex-col p-4">
+
+             <div className="flex flex-row bg-black rounded-lg overflow-hidden max-w-screen-lg mx-auto mb-5">
+                <div className="flex flex-col p-6 w-3/4">
                     <h5 className="text-2xl font-semibold text-white mb-2">
                         PHOTOGRAPHY
                     </h5>
@@ -41,14 +42,15 @@ function Services() {
                 </div>
 
                 <img 
-                    className="ml-10 object-cover  h-80 md:h-60" 
-                    src={`${process.env.PUBLIC_URL}/carPart.png`} 
+                    className="object-cover w-1/4 h-80 md:h-60" 
+                    
+                    src={`${process.env.PUBLIC_URL}/CarDoor.png`} 
                     alt="Cleaning" 
                 />
              </div>
 
-             <div className="flex flex-row bg-black rounded-lg overflow-hidden max-w-screen-xl mx-auto mb-5">
-                <div className="flex flex-col p-4">
+             <div className="flex flex-row bg-black rounded-lg overflow-hidden max-w-screen-lg mx-auto mb-5">
+                <div className="flex flex-col p-6 w-3/4">
                     <h5 className="text-2xl font-semibold text-white mb-2">
                         STORAGE
                     </h5>
@@ -57,15 +59,15 @@ function Services() {
                     </p>
                 </div>
                 <img 
-                    className="ml-10 object-cover h-80 md:h-40" 
+                    className="object-cover w-1/4 h-80 md:h-60" 
                     src={`${process.env.PUBLIC_URL}/Storage.png`} 
                     alt="Cleaning" 
                 />
              </div>
 
 
-             <div className="flex flex-row bg-black rounded-lg overflow-hidden max-w-screen-xl mx-auto mb-5">
-                <div className="flex flex-col p-4">
+             <div className="flex flex-row bg-black rounded-lg overflow-hidden max-w-screen-lg mx-auto mb-5">
+                <div className="flex flex-col p-6 w-3/4">
                     <h5 className="text-2xl font-semibold text-white mb-2">
                         SHIPPING​
                     </h5>
@@ -74,15 +76,15 @@ function Services() {
                     </p>
                 </div>
                 <img 
-                    className="ml-10 object-cover h-80 md:h-40" 
+                    className="object-cover w-1/4 h-80 md:h-60" 
                     src={`${process.env.PUBLIC_URL}/Shipping.png`} 
                     alt="Cleaning" 
                 />
              </div>
 
 
-             <div className="flex flex-row bg-black rounded-lg overflow-hidden max-w-screen-xl mx-auto mb-5">
-                <div className="flex flex-col p-4">
+             <div className="flex flex-row bg-black rounded-lg overflow-hidden max-w-screen-lg mx-auto mb-5">
+                <div className="flex flex-col p-6 w-3/4">
                     <h5 className="text-2xl font-semibold text-white mb-2">
                         WARRANTY
                     </h5>
@@ -91,7 +93,7 @@ function Services() {
                     </p>
                 </div>
                 <img 
-                    className="ml-10 object-cover h-80 md:h-40" 
+                    className="object-cover w-1/4 h-80 md:h-60" 
                     src={`${process.env.PUBLIC_URL}/CarLot.png`} 
                     alt="Cleaning" 
                 />

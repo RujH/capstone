@@ -3,14 +3,6 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-
-      fontFamily:{
-        zentry: ['zentry', 'sanf-serif'],
-        general: ['general', 'sanf-serif'],
-        "circular-web": ['circular-web', 'sanf-serif'],
-        "rovert-medium": ['rovert-medium', 'sanf-serif'],
-        "robert-regular": ['robert-regular', 'sanf-serif'],
-      },
       colors:{
         green:{
           347: '#009A44',
@@ -47,6 +39,10 @@ module.exports = {
       }
 
     },
+    container: {
+      center: true,
+      padding: "1rem",
+    }
   },
   plugins: [],
 }

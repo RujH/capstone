@@ -31,3 +31,24 @@
     height: 50px;
     width: auto; /* correct proportions to specified height */
   }
+
+
+  .merriweather-light {
+    font-family: "Merriweather", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: medium;
+  }
+  
+  .merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .merriweather-bold {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: xx-large;
+  }

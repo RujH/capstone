@@ -2,7 +2,7 @@
 .about-us {
     align-items: center;
     padding: 60px 20px;
-    background-color:  #141a17;
+    background-color:  #000000;
 }
 
 
@@ -51,6 +51,6 @@
     justify-content: center; 
     align-items: center;
     flex-wrap: wrap;
-    gap: 1.5rem; 
-    margin-top: 10px;
+    gap: 2rem; 
+    margin-top: 40px;
 }

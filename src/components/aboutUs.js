@@ -1,16 +1,16 @@
 import React from 'react';
 import './aboutUs.css';
-import { HandThumbUpIcon, ClockIcon, CheckIcon, CameraIcon} from '@heroicons/react/24/outline'; 
+import {ShieldCheckIcon, HandThumbUpIcon, ClockIcon, CheckIcon, CameraIcon} from '@heroicons/react/24/outline'; 
 
 
 
 function AboutUs () {
     return (
-        <section className="about-us">
+        <section className="about-us" id="aboutUs">
             <div className='content-center'>
                 <div className="row">
 
-                    <h2 className="about-title">About Us</h2>
+                    <h2 className="about-title merriweather-bold">About Us</h2>
                     
                     <p className="about-description">
                         Welcome to our website! We are a team of passionate professionals dedicated to delivering exceptional service and innovative solutions. Our goal is to create value and impact through our expertise and commitment to excellence.
@@ -21,20 +21,21 @@ function AboutUs () {
 
                 <div className='row1'>
                     <div className="small-section">
-                        <HandThumbUpIcon className="w-6 h-6 text-green-500" />
-                        <p className="text">1 Year Complimentary Warranty</p>
+                        <ShieldCheckIcon className="w-10 h-10 text-green-368" />
+                        <p className="text">Rigorous Inspection Checks</p>
                     </div>
                     <div className="small-section">
-                        <ClockIcon className="w-6 h-6 text-green-500" />
-                        <p className="text">Shipped within 24 Hours</p>
+                        <CameraIcon className="w-10 h-10 text-green-368" />
+                        <p className="text">High Quality Pictures of all Parts</p>
                     </div>
                     <div className="small-section">
-                        <CameraIcon className="w-6 h-6 text-green-500" />
-                        <p className="text">High quality pictures of all parts</p>
+                        <ClockIcon className="w-10 h-10 text-green-368" />
+                        <p className="text">Shipped Within 24 Hours</p>
                     </div>
+                   
                     <div className="small-section">
-                        <CheckIcon className="w-6 h-6 text-green-500" />
-                        <p className="text">Satisfaction Guaranteed</p>
+                        <CheckIcon className="w-10 h-10 text-green-368" />
+                        <p className="text">Complementary Warranty</p>
                     </div>
                    
                 </div>
