@@ -1,6 +1,6 @@
 import React from 'react';
 import './aboutUs.css';
-import {ShieldCheckIcon, HandThumbUpIcon, ClockIcon, CheckIcon, CameraIcon} from '@heroicons/react/24/outline'; 
+import {ShieldCheckIcon, ClockIcon, CheckIcon, CameraIcon} from '@heroicons/react/24/outline'; 
 
 
 
