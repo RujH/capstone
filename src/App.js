@@ -11,15 +11,18 @@ import Footer from './components/footer';
 
 function App() {
   return (
- 
-      <main className='relative min-h-screen w-screen overflow-x-hidden'>
-        <Header/>
+    <div className='min-h-screen'>
+       <Header />
+       <main >
         <LandingPage />
         <Services/>
         <AboutUs />
         <ContactUs /> 
-        <Footer/>
       </main>
+      <Footer/>
+    </div>
+ 
+     
      
 
 

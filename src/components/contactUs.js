@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
+
 
 function ContactUs ()  {
-  // State for form inputs
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -18,7 +19,6 @@ function ContactUs ()  {
     setError(""); // Reset error message as user types
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -28,12 +28,34 @@ function ContactUs ()  {
       return;
     }
 
-    console.log("Form Data Submitted:", formData);
+    emailjs.send(
+      "service_4bonqnb", 
+      "template_gidx7ag", 
+      formData,           
+      "fJzLNj9p738CBzFg-"   
+    ).then(
+      (result) => {
+        console.log("Email successfully sent!", result.text);
+        setIsSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          vin: "",
+          message: "",
+        });
+        // Clear the success message after a timeout
+        setTimeout(() => {
+          setIsSubmitted(false);
+        }, 5000);
+      },
+      (error) => {
+        console.error("Error sending email:", error);
+        setError("An error occurred while sending your message. Please try again.");
+      }
+    );
 
-    // Set success message
     setIsSubmitted(true);
 
-    // Optionally reset the form
     setFormData({
       name: "",
       email: "",
@@ -41,14 +63,13 @@ function ContactUs ()  {
       message: "",
     });
 
-    // Clear the success message after a timeout
     setTimeout(() => {
       setIsSubmitted(false);
     }, 5000);
   };
 
   return (
-    <section className="bg-white py-12" id="contact">
+    <section className="bg-white py-12" id="contactUs">
       <div className="container mx-auto px-4">
         <h2 className=" contact-title merriweather-bold text-center  mb-8">Tired of Ordering the Wrong Part? We Can Help</h2>
       

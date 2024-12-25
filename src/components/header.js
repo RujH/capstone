@@ -1,36 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './header.css';
-import {  PhoneIcon, EnvelopeIcon, MapPinIcon} from '@heroicons/react/24/outline'; 
+import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/outline';
 import { FaEbay } from "react-icons/fa";
 
-function Header () {
+function Header() {
+    const [menuOpen, setMenuOpen] = useState(false); // state for menu toggle
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen); // Toggle menu visibility
+    };
+
     return (
-        <section className='' >
-            {/* First Header (Contact Information) */}
-            <header className="bg-white h-auto flex items-center self-start sticky top-0 z-10 py-4">
-                <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 w-full mx-auto px-4">
-                    <div className="flex items-center justify-center text-center">
-                        <PhoneIcon className="w-6 h-6 text-green-368 mr-2" />
-                        <p className="text-sm sm:text-base">(619) 359-0333</p>
-                    </div>
-
-                    <div className="flex items-center justify-center text-center">
-                        <EnvelopeIcon className="w-6 h-6 text-green-368 mr-2" />
-                        <p className="text-sm sm:text-base">Sales@capstoneautoparts.com</p>
-                    </div>
-
-                    <a
-                        href="https://www.google.com/maps/search/?api=1&query=935+Bailey+Ct,+San+Marcos,+CA+92069"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <div className="flex items-center justify-start cursor-pointer hover:bg-gray-100 p-2 rounded">
+        <section>
+           <header className="header1">
+                <div className="flex justify-between items-center w-full mx-auto px-4">
+                    {/* Left Side: Contact Information */}
+                    <div className="flex space-x-8">
+                        <div className="flex items-center">
+                            <PhoneIcon className="w-6 h-6 text-green-368 mr-2" />
+                            <p className="text-sm sm:text-base">(619) 359-0333</p>
+                        </div>
+                        <div className="flex items-center">
+                            <EnvelopeIcon className="w-6 h-6 text-green-368 mr-2" />
+                            <p className="text-sm sm:text-base">Sales@capstoneautoparts.com</p>
+                        </div>
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&query=935+Bailey+Ct,+San+Marcos,+CA+92069"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center cursor-pointer hover:bg-gray-100 p-2 rounded"
+                        >
                             <MapPinIcon className="w-6 h-6 text-green-368 mr-2" />
                             <p className="text-sm sm:text-base">935 Bailey Ct, San Marcos, CA 92069</p>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
 
-                    <div className="flex items-center justify-center text-center">
+                    {/* Right Side: eBay Section */}
+                    <div className="flex items-center">
                         <p className="text-sm sm:text-base mr-2 whitespace-nowrap">Find Us On</p>
                         <a href="https://www.ebay.com/str/capstoneautoparts" target="_blank" rel="noopener noreferrer">
                             <FaEbay className="w-10 h-10" />
@@ -39,39 +45,32 @@ function Header () {
                 </div>
             </header>
 
-            {/* Second Header (Navigation) */}
-            <header className="bg-black h-auto flex items-center self-start sticky top-0 z-20 py-4">
-                <nav className="container mx-auto flex flex-col sm:flex-row items-center justify-between px-4 w-full">
-                    <div className="py-1 flex items-center justify-center sm:justify-start">
-                        <img
-                            className="h-12" 
-                            src={`${process.env.PUBLIC_URL}/Logo_4.png`}
-                            alt="Logo"
-                        />
-                    </div>
+            <header className="header2">
+  <nav className="container mx-auto flex items-center justify-between px-4 w-full">
+    {/* Logo on the left side */}
+    <div className="logo-container">
+      <img
+        className="h-12"
+        src={`${process.env.PUBLIC_URL}/Logo_4.png`}
+        alt="Logo"
+      />
+    </div>
 
-                    {/* Mobile Navigation (Hidden on larger screens) */}
-                    <ul className="sm:hidden flex flex-col items-center w-full gap-4 text-white uppercase text-sm">
-                        <li><a href="/home">Home</a></li>
-                        <li><a href="/services">Services</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
+    {/* Navigation Links on the right side */}
+    <div className="top-nav">
+      <ul className="menu">
+        <li><a href="/home">Home</a></li>
+        <li><a href="https://www.ebay.com/str/capstoneautoparts" target="_blank" rel="noopener noreferrer">Inventory</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#aboutUs">About</a></li>
+        <li><a href="#contactUs">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
-                    {/* Desktop Navigation */}
-                    <ul className="hidden sm:flex flex-1 justify-end items-center gap-12 text-white uppercase text-sm">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="https://www.ebay.com/str/capstoneautoparts" target="_blank" rel="noopener noreferrer">Inventory</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#aboutUs">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
         </section>
     );
 }
-
-
 
 export default Header;

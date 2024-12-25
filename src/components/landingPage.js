@@ -8,7 +8,7 @@ function LandingPage () {
 
     return (
         <section id="home">
-            <div className="landing-page">
+            <div className="landing-page container1">
                 <video className="landing-video" autoPlay muted loop>
                     <source src={`${process.env.PUBLIC_URL}/video.mp4`} type="video/mp4" />
                     Your browser does not support the video tag.
