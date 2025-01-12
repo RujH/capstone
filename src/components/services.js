@@ -55,8 +55,7 @@ function Services() {
                         STORAGE
                     </h5>
                     <p className="text-lg text-gray-300">
-                    We believe in transparency, which is why we provide detailed, high-resolution photos of our parts. These images offer a clear and accurate representation of the item, helping our customers make informed decisions without surprises.                    
-                    </p>
+                        Spoiled by the likes of big eCommerce giant, Amazon, we know our customers have shared a similar experience. Hence we are implementing some of the latest technologies and management techniques to create an efficient system where most orders are processed in less than 24 hrs. Additionally, our entire inventory is stored indoors to protect from the elements.                    </p>
                 </div>
                 <img 
                     className="object-cover w-1/4 h-auto max-h-48 md:h-60" 
